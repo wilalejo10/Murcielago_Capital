@@ -1,450 +1,368 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Análisis de Lectura: El Murciélago y el Capital</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-            },
-            colors: {
-              "slate-950": "#081729",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Análisis de Lectura: El Murciélago y el Capital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+          },
+          colors: {
+            "slate-950": "#081729",
           },
         },
-      };
-    </script>
-    <style>
-      body {
-        font-family: "Inter", sans-serif;
-        background-color: #0f172a;
-      }
-      .accordion-content {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease-out, padding 0.4s ease-out;
-      }
-      .accordion-content.open {
-        max-height: 2000px;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-      }
-    </style>
-  </head>
-  <body class="text-gray-200 antialiased">
-    <div class="max-w-4xl mx-auto p-6 lg:p-10">
-      <header class="text-center py-12 border-b border-gray-700 mb-8">
-        <h1
-          class="text-4xl lg:text-5xl font-extrabold text-teal-400 mb-2 tracking-tight"
-        >
-          El Murciélago y el Capital
-        </h1>
-        <h2 class="text-xl lg:text-2xl font-light text-gray-400">
-          Coronavirus, cambio climático y guerra social
-        </h2>
-        <div class="mt-4 text-sm text-gray-500">
-          <p>
-            Autor:
-            <span class="text-gray-300 font-semibold">Andreas Malm</span> |
-            Editorial:
-            <span class="text-gray-300 font-semibold"
-              >Errata Naturae</span
-            >
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: #0f172a;
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+    }
+
+    .accordion-content.open {
+      max-height: 2000px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body class="text-gray-200 antialiased">
+  <div class="max-w-4xl mx-auto p-6 lg:p-10">
+    <header class="text-center py-12 border-b border-gray-700 mb-8">
+      <h1 class="text-4xl lg:text-5xl font-extrabold text-teal-400 mb-2 tracking-tight">
+        El Murciélago y el Capital
+      </h1>
+      <h2 class="text-xl lg:text-2xl font-light text-gray-400">
+        Coronavirus, cambio climático y guerra social
+      </h2>
+      <div class="mt-4 text-sm text-gray-500">
+        <p>
+          Autor:
+          <span class="text-gray-300 font-semibold">Andreas Malm</span> |
+          Editorial:
+          <span class="text-gray-300 font-semibold">Errata Naturae</span>
+        </p>
+        <img src="murcielago.png" alt="Portada del libro El murciélago y el capital"
+          class="mx-auto mb-6 w-48 rounded-lg shadow-lg" />
+      </div>
+    </header>
+
+    <div id="analysis-sections" class="space-y-6">
+      <div class="bg-slate-800 rounded-xl shadow-lg border border-teal-500/50">
+        <button
+          class="accordion-header w-full flex justify-between items-center p-5 text-xl font-semibold hover:bg-slate-700/50 rounded-xl transition duration-200"
+          data-target="content-1">
+          1. Introducción y Prelectura
+          <svg class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="content-1" class="accordion-content px-5 border-t border-gray-700 text-gray-300">
+          <h3 class="font-bold text-teal-300 mb-3">Datos Clave del Libro:</h3>
+          <ul class="list-disc ml-6 space-y-2 text-sm">
+            <li>
+              Tipo de Texto:Argumentativo (combina análisis social, histórico y
+              político con fuerte postura crítica).
+            </li>
+            <li>
+              Pequeña Biografía del Autor: La investigación de Andreas Malm se centra en la crisis climática, con
+              especial atención al capitalismo fósil
+              (cómo el uso de combustibles fósiles, la lógica de acumulación capitalista y transformaciones
+              energéticas históricas contribuyen al calentamiento global).
+            <li>
+              Ha publicado varios libros relevantes, entre ellos Capital fósil, The Progress of This Storm: Nature and
+              Society in a Warming World, How to Blow Up a Pipeline:
+              Learning to Fight in a World on Fire, y El murciélago y el capital: Coronavirus, cambio climático y guerra
+              social.
+            </li>
+            </li>
+            <li>
+              Propósito de la Lectura: Comprender cómo las pandemias y el cambio climático están vinculados al sistema
+              económico capitalista.
+            </li>
+          </ul>
+          <h3 class="font-bold text-teal-300 mt-5 mb-3">
+            Notas de Prelectura (Prólogo/Contracarátula):
+          </h3>
+          <p class="text-sm italic border-l-4 border-teal-600 pl-3">
+            Plantea que la pandemia de COVID-19 no es un accidente aislado,
+            sino un síntoma de un sistema global en crisis.
           </p>
-        </div>
-      </header>
+          <p class="text-sm italic border-l-4 border-teal-600 pl-3">
+            Contextualiza la relación entre catástrofes sanitarias y ecológicas,
+            mostrando cómo el capitalismo acelera la destrucción ambiental, introduciendo la idea de que tanto el cambio climático como las 
+            pandemias emergen de procesos estructurales —económicos, sociales y ecológicos—, más que de fenómenos naturales “espontáneos”.
+          </p>
+          <h3 class="font-bold text-teal-300 mt-5 mb-3">
+            Conocimiento Previo y Postura:
+          </h3>
+          <ul class="list-disc ml-6 space-y-2 text-sm">
+            <li>
+              Soy consciente de que el capitalismo promueve el consumo masivo y la explotación de recursos naturales sin
+              límites.
+            </li>
+            <li>
+              Creo que el capitalismo tiene gran responsabilidad porque prioriza las ganancias sobre el bienestar del
+              planeta.
+              Sin embargo, pienso que no es el único factor; también influyen decisiones políticas y sociales.
+            </li>
+            <li>
+              Sé que muchas actividades económicas (como la expansión agrícola y la deforestación)
+              aumentan el riesgo de contacto entre humanos y especies portadoras de virus.
+            </li>
+          </ul>
 
-      <div id="analysis-sections" class="space-y-6">
-        <div
-          class="bg-slate-800 rounded-xl shadow-lg border border-teal-500/50"
-        >
-          <button
-            class="accordion-header w-full flex justify-between items-center p-5 text-xl font-semibold hover:bg-slate-700/50 rounded-xl transition duration-200"
-            data-target="content-1"
-          >
-            1. Introducción y Prelectura
-            <svg
-              class="w-5 h-5 transform transition-transform duration-200"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              ></path>
-            </svg>
-          </button>
-          <div
-            id="content-1"
-            class="accordion-content px-5 border-t border-gray-700 text-gray-300"
-          >
-            <h3 class="font-bold text-teal-300 mb-3">Datos Clave del Libro:</h3>
-            <ul class="list-disc ml-6 space-y-2 text-sm">
-              <li>
-                Tipo de Texto:Argumentativo (combina análisis social, histórico y 
-                político con fuerte postura crítica).
-              </li>
-              <li>
-                Pequeña Biografía del Autor: La investigación de Andreas Malm se centra en la crisis climática, con especial atención al capitalismo fósil 
-                (cómo el uso de combustibles fósiles, la lógica de acumulación capitalista y transformaciones
-                energéticas históricas contribuyen al calentamiento global).
-              <li>
-                Ha publicado varios libros relevantes, entre ellos Capital fósil, The Progress of This Storm: Nature and Society in a Warming World, How to Blow Up a Pipeline: 
-                Learning to Fight in a World on Fire, y El murciélago y el capital: Coronavirus, cambio climático y guerra social.      
-              </li>
-              </li>
-              <li>
-                Propósito de la Lectura: Comprender cómo las pandemias y el cambio climático están vinculados al sistema económico capitalista.
-              </li>
-            </ul>
-            <h3 class="font-bold text-teal-300 mt-5 mb-3">
-              Notas de Prelectura (Prólogo/Contracarátula):
-            </h3>
-            <p class="text-sm italic border-l-4 border-teal-600 pl-3">
-              La prelectura sugiere que Malm no solo narra los hechos de la
-              pandemia, sino que rastrea su causa profunda en la invasión de
-              hábitats salvajes por la expansión agroindustrial capitalista.
-            </p>
-            <h3 class="font-bold text-teal-300 mt-5 mb-3">
-              Conocimiento Previo y Postura:
-            </h3>
-            <p class="text-sm">
-              
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="bg-slate-800 rounded-xl shadow-lg border border-teal-500/50"
-        >
-          <button
-            class="accordion-header w-full flex justify-between items-center p-5 text-xl font-semibold hover:bg-slate-700/50 rounded-xl transition duration-200"
-            data-target="content-2"
-          >
-            2. Desarrollo Temático (Ideas Principales)
-            <svg
-              class="w-5 h-5 transform transition-transform duration-200"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              ></path>
-            </svg>
-          </button>
-          <div
-            id="content-2"
-            class="accordion-content px-5 border-t border-gray-700 text-gray-300"
-          >
-            <ul class="space-y-4">
-              <li>
-                <p class="font-bold text-teal-300">
-                  Capítulo I:
-                </p>
-                <p class="text-sm ml-4 border-l-2 border-gray-600 pl-3">
-                  Tesis central: Las pandemias no son accidentes naturales, sino 'revoluciones metabólicas' provocadas por el capital al
-                  penetrar ecosistemas vírgenes (deforestación, granjas
-                  industriales). Secuencia: Destrucción de hábitat → Contacto
-                  humano-animal → Mutación viral.
-                </p>
-              </li>
-              <li>
-                <p class="font-bold text-teal-300 mt-4">
-                  Capítulo II:
-                </p>
-                <p class="text-sm ml-4 border-l-2 border-gray-600 pl-3">
-                  Análisis de dónde y cómo se originan los virus (China, Asia
-                  Sudoriental, etc.) y cómo la globalización (transporte aéreo,
-                  cadenas de suministro) actúa como un acelerador de la
-                  propagación. Se critica la idea de una "culpa" cultural y se
-                  enfoca en la dinámica estructural del capital globalizado.
-                </p>
-              </li>
-              <li>
-                <p class="font-bold text-teal-300 mt-4">
-                  Capítulo III:
-                </p>
-                <p class="text-sm ml-4 border-l-2 border-gray-600 pl-3">
-                  Conexión directa entre la crisis climática y la crisis de
-                  salud. Ambos son síntomas de un 'metabolismo' capitalista que
-                  extrae y desecha sin límites. Propone que la única cura real
-                  es un cambio radical en la forma de producción social.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div
-          class="bg-slate-800 rounded-xl shadow-lg border border-teal-500/50"
-        >
-          <button
-            class="accordion-header w-full flex justify-between items-center p-5 text-xl font-semibold hover:bg-slate-700/50 rounded-xl transition duration-200"
-            data-target="content-3"
-          >
-            3. Conceptos Clave
-            <svg
-              class="w-5 h-5 transform transition-transform duration-200"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              ></path>
-            </svg>
-          </button>
-          <div
-            id="content-3"
-            class="accordion-content px-5 border-t border-gray-700 text-gray-300"
-          >
-            <ul class="space-y-4 text-sm">
-              <li>
-                <p class="font-bold text-teal-300">
-                  Revolución Metabólica / Fractura Metabólica:
-                </p>
-                <p class="ml-4">
-                  Concepto de Marx revivido. Se refiere a la ruptura del
-                  intercambio equilibrado entre la humanidad y la naturaleza,
-                  donde el capital rompe los ciclos naturales de la tierra y la
-                  vida silvestre.
-                </p>
-              </li>
-              <li>
-                <p class="font-bold text-teal-300">Capital Fósil:</p>
-                <p class="ml-4">
-                  Estructura socioeconómica y tecnológica basada históricamente
-                  en la quema de combustibles fósiles, la cual es la raíz de la
-                  crisis climática y, tangencialmente, de las crisis zoonóticas
-                  por la necesidad de expansión.
-                </p>
-              </li>
-              <li>
-                <p class="font-bold text-teal-300">
-                  Acumulación por Despojo Ecológico:
-                </p>
-                <p class="ml-4">
-                  El proceso por el cual el capital se expande invadiendo y
-                  mercantilizando los territorios naturales, incluyendo la vida
-                  silvestre y los recursos hídricos, creando las condiciones
-                  para los saltos virales.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div
-          class="bg-slate-800 rounded-xl shadow-lg border border-teal-500/50"
-        >
-          <button
-            class="accordion-header w-full flex justify-between items-center p-5 text-xl font-semibold hover:bg-slate-700/50 rounded-xl transition duration-200"
-            data-target="content-4"
-          >
-            4. Ejemplos y Aplicaciones en la Vida Real
-            <svg
-              class="w-5 h-5 transform transition-transform duration-200"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              ></path>
-            </svg>
-          </button>
-          <div
-            id="content-4"
-            class="accordion-content px-5 border-t border-gray-700 text-gray-300"
-          >
-            <ul class="list-disc ml-6 space-y-3 text-sm">
-              <li>
-                Agroindustria y Monocultivo: La expansión de plantaciones de
-                palma africana o soya en el Amazonas como ejemplo de la
-                "frontera de la mercancía" que desaloja murciélagos y otros
-                animales, forzando un contacto más cercano con humanos y ganado.
-              </li>
-              <li>
-                El Caso del Ébola: El libro relaciona la aparición del Ébola
-                con la deforestación y la minería que empuja a los primates a
-                áreas habitadas, no a un "exceso" cultural, sino a una necesidad
-                extractiva.
-              </li>
-              <li>
-                Transporte de Mercancías: La dependencia del transporte
-                marítimo y aéreo global para la producción *just-in-time* como
-                la vía rápida por la que un virus zoonótico puede convertirse en
-                una pandemia mundial en cuestión de semanas.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div
-          class="bg-slate-800 rounded-xl shadow-lg border border-teal-500/50"
-        >
-          <button
-            class="accordion-header w-full flex justify-between items-center p-5 text-xl font-semibold hover:bg-slate-700/50 rounded-xl transition duration-200"
-            data-target="content-5"
-          >
-            5. Conclusiones y Relevancia Profesional
-            <svg
-              class="w-5 h-5 transform transition-transform duration-200"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              ></path>
-            </svg>
-          </button>
-          <div
-            id="content-5"
-            class="accordion-content px-5 border-t border-gray-700 text-gray-300"
-          >
-            <p class="text-sm">
-              Hallazgos Principales: El hallazgo más importante es la
-              desnaturalización de las pandemias: son fenómenos socio-ecológicos
-              producidos por el sistema económico dominante. Malm obliga a mirar
-              más allá de la virología hacia la economía política.
-            </p>
-            <p class="text-sm mt-3">
-              Importancia para mi Formación: Como futuro ingeniero, la lectura me dota de una perspectiva crítica
-              indispensable. No basta con tratar los síntomas (pandemias, calor
-              extremo); es necesario cuestionar la estructura que los genera.
-              Esto implica integrar la sostenibilidad radical y la justicia
-              social en cualquier proyecto o política que desarrolle,
-              entendiendo que la crisis ecológica es, ante todo, una crisis de
-              poder.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="bg-slate-800 rounded-xl shadow-lg border border-teal-500/50"
-        >
-          <button
-            class="accordion-header w-full flex justify-between items-center p-5 text-xl font-semibold hover:bg-slate-700/50 rounded-xl transition duration-200"
-            data-target="content-6"
-          >
-            6. Preguntas de Reflexión y Debate
-            <svg
-              class="w-5 h-5 transform transition-transform duration-200"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              ></path>
-            </svg>
-          </button>
-          <div
-            id="content-6"
-            class="accordion-content px-5 border-t border-gray-700 text-gray-300"
-          >
-            <ul class="list-decimal ml-6 space-y-3 text-sm font-light">
-              <li>
-                Malm argumenta que la crisis exige un "comunismo de guerra
-                ecológica". ¿Es viable esta propuesta en el actual panorama
-                geopolítico y qué implicaciones éticas tendría una planificación
-                centralizada de esa magnitud?
-              </li>
-              <li>
-                Si el problema es el metabolismo del capital, ¿qué acciones
-                pueden llevar a cabo los Estados, que dependen de ese mismo
-                capital, para frenar la expansión zoonótica? ¿Es posible una
-                solución reformista, o solo una revolucionaria?
-              </li>
-              <li>
-                ¿Cómo puede la sociedad civil en países del Sur Global, donde la
-                "frontera de la mercancía" está más activa, proteger sus
-                ecosistemas y comunidades sin caer en la condena del
-                estancamiento económico?
-              </li>
-              <li>
-                ¿Cuál es el rol de las profesiones para
-                desafiar la lógica del "capital fósil" y construir alternativas
-                productivas que no dependan del despojo ecológico?
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
 
-      <footer
-        class="text-center mt-12 pt-6 border-t border-gray-700 text-gray-500 text-xs"
-      >
-         <p>&copy; Copyrigth 2025. Diseñado por William Alejandro Rincon Prieto para Informatica y Scoiedad &#124 Bogotá - Colombia</p>
-         <p><a href="https://www.instagram.com/alejandrorinp/" target="_blank">Instagram</a></p>
-         <p><a href="https://github.com/wilalejo10" target="_blank">Github</a></p>
-      </footer>
+      <div class="bg-slate-800 rounded-xl shadow-lg border border-teal-500/50">
+        <button
+          class="accordion-header w-full flex justify-between items-center p-5 text-xl font-semibold hover:bg-slate-700/50 rounded-xl transition duration-200"
+          data-target="content-2">
+          2. Desarrollo Temático (Ideas Principales)
+          <svg class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="content-2" class="accordion-content px-5 border-t border-gray-700 text-gray-300">
+          <ul class="space-y-4">
+            <li>
+              <p class="font-bold text-teal-300">
+                Capítulo I:
+              </p>
+              <p class="text-sm ml-4 border-l-2 border-gray-600 pl-3">
+                Tesis de la producción Estructural: Malm sostiene que la pandemia no es un accidente ecológico aleatorio, sino el resultado de 
+                la "Frontera de la Mercancía". Esta frontera es la expansión continua del capital hacia ecosistemas vírgenes. La deforestación
+                masiva (impulsada por la agroindustria, la minería y el monocultivo, como la palma de aceite) destruye el hábitat de especies
+                portadoras de virus (como los murciélagos). Al desalojar a estas especies, se fuerza un contacto más íntimo y frecuente
+                con poblaciones humanas y ganado, creando las condiciones perfectas para un "salto zoonótico" y la mutación viral.
+                El virus es, por lo tanto, un fenómeno ecológico mediado por la lógica de acumulación capitalista.
+              </p>
+            </li>
+            <li>
+              <p class="font-bold text-teal-300 mt-4">
+                Capítulo II:
+              </p>
+              <p class="text-sm ml-4 border-l-2 border-gray-600 pl-3">
+                Vector de Dispersión: La Globalización Capitalista: Este capítulo se centra en cómo el brote se transforma en pandemia.
+                Malm critica las narrativas que culpan a los mercados húmedos o a la cultura oriental, argumentando que el verdadero vector de
+                dispersión es el capital globalizado. El sistema de producción "just-in-time", basado en cadenas de suministro ultrarrápidas y
+                el transporte aéreo intensivo, actúa como un acelerador radical, permitiendo que un brote regional se convierta en una crisis 
+                mundial en cuestión de semanas. Además, analiza la respuesta estatal inicial, que priorizó el mantenimiento del flujo de 
+                mercancías y la economía sobre medidas sanitarias estrictas, revelando un compromiso sistémico con la inercia económica.
+              </p>
+            </li>
+            <li>
+              <p class="font-bold text-teal-300 mt-4">
+                Capítulo III:
+              </p>
+              <p class="text-sm ml-4 border-l-2 border-gray-600 pl-3">
+                La Doble Crisis y la Raíz Común: Malm establece una conexión crucial entre la crisis de salud (pandemias) y la crisis climática. 
+                Argumenta que ambas son manifestaciones de la misma "fractura metabólica" que el capitalismo impone a la naturaleza.
+                Mientras la pandemia es una crisis aguda (rápida), el cambio climático es crónico (sistémico), pero ambos provienen de la inercia
+                del Capital Fósil y su necesidad de crecimiento extractivo perpetuo. El autor concluye que la única solución verdadera y 
+                duradera pasa por un cambio social radical que desmantele la infraestructura fósil y la lógica de acumulación, proponiendo una
+                acción colectiva de tipo "comunismo de guerra ecológica" para frenar la destrucción.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-slate-800 rounded-xl shadow-lg border border-teal-500/50">
+        <button
+          class="accordion-header w-full flex justify-between items-center p-5 text-xl font-semibold hover:bg-slate-700/50 rounded-xl transition duration-200"
+          data-target="content-3">
+          3. Conceptos Clave
+          <svg class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="content-3" class="accordion-content px-5 border-t border-gray-700 text-gray-300">
+          <ul class="space-y-4 text-sm">
+            <li>
+              <p class="font-bold text-teal-300">
+                Revolución Metabólica / Fractura Metabólica:
+              </p>
+              <p class="ml-4">
+                Concepto de Marx revivido. Se refiere a la ruptura del
+                intercambio equilibrado entre la humanidad y la naturaleza,
+                donde el capital rompe los ciclos naturales de la tierra y la
+                vida silvestre.
+              </p>
+            </li>
+            <li>
+              <p class="font-bold text-teal-300">Capital Fósil:</p>
+              <p class="ml-4">
+                Estructura socioeconómica y tecnológica basada históricamente
+                en la quema de combustibles fósiles, la cual es la raíz de la
+                crisis climática y, tangencialmente, de las crisis zoonóticas
+                por la necesidad de expansión.
+              </p>
+            </li>
+            <li>
+              <p class="font-bold text-teal-300">
+                Acumulación por Despojo Ecológico:
+              </p>
+              <p class="ml-4">
+                El proceso por el cual el capital se expande invadiendo y
+                mercantilizando los territorios naturales, incluyendo la vida
+                silvestre y los recursos hídricos, creando las condiciones
+                para los saltos virales.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-slate-800 rounded-xl shadow-lg border border-teal-500/50">
+        <button
+          class="accordion-header w-full flex justify-between items-center p-5 text-xl font-semibold hover:bg-slate-700/50 rounded-xl transition duration-200"
+          data-target="content-4">
+          4. Ejemplos y Aplicaciones en la Vida Real
+          <svg class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="content-4" class="accordion-content px-5 border-t border-gray-700 text-gray-300">
+          <ul class="list-disc ml-6 space-y-3 text-sm">
+            <li>
+              Agroindustria y Monocultivo: La expansión de plantaciones de
+              palma africana o soya en el Amazonas como ejemplo de la
+              "frontera de la mercancía" que desaloja murciélagos y otros
+              animales, forzando un contacto más cercano con humanos y ganado.
+            </li>
+            <li>
+              El Caso del Ébola: El libro relaciona la aparición del Ébola
+              con la deforestación y la minería que empuja a los primates a
+              áreas habitadas, no a un "exceso" cultural, sino a una necesidad
+              extractiva.
+            </li>
+            <li>
+              Transporte de Mercancías: La dependencia del transporte
+              marítimo y aéreo global para la producción *just-in-time* como
+              la vía rápida por la que un virus zoonótico puede convertirse en
+              una pandemia mundial en cuestión de semanas.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-slate-800 rounded-xl shadow-lg border border-teal-500/50">
+        <button
+          class="accordion-header w-full flex justify-between items-center p-5 text-xl font-semibold hover:bg-slate-700/50 rounded-xl transition duration-200"
+          data-target="content-5">
+          5. Conclusiones y Relevancia Profesional
+          <svg class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="content-5" class="accordion-content px-5 border-t border-gray-700 text-gray-300">
+          <p class="text-sm">
+            Hallazgos Principales: El hallazgo más importante es la
+            desnaturalización de las pandemias: son fenómenos socio-ecológicos
+            producidos por el sistema económico dominante. Malm obliga a mirar
+            más allá de la virología hacia la economía política.
+          </p>
+          <p class="text-sm mt-3">
+            Importancia para mi Formación: Como futuro ingeniero, la lectura me dota de una perspectiva crítica
+            indispensable. No basta con tratar los síntomas (pandemias, calor
+            extremo); es necesario cuestionar la estructura que los genera.
+            Esto implica integrar la sostenibilidad radical y la justicia
+            social en cualquier proyecto o política que desarrolle,
+            entendiendo que la crisis ecológica es, ante todo, una crisis de
+            poder.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-800 rounded-xl shadow-lg border border-teal-500/50">
+        <button
+          class="accordion-header w-full flex justify-between items-center p-5 text-xl font-semibold hover:bg-slate-700/50 rounded-xl transition duration-200"
+          data-target="content-6">
+          6. Preguntas de Reflexión y Debate
+          <svg class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="content-6" class="accordion-content px-5 border-t border-gray-700 text-gray-300">
+          <ul class="list-decimal ml-6 space-y-3 text-sm font-light">
+            <li>
+              Si el problema es el metabolismo del capital, ¿qué acciones
+              pueden llevar a cabo los Estados, que dependen de ese mismo
+              capital, para frenar la expansión zoonótica? ¿Es posible una
+              solución reformista, o solo una revolucionaria?
+            </li>
+            <li>
+              ¿Cómo puede la sociedad civil en países del Sur Global, donde la
+              "frontera de la mercancía" está más activa, proteger sus
+              ecosistemas y comunidades sin caer en la condena del
+              estancamiento económico?
+            </li>
+            <li>
+              ¿Cuál es el rol de las profesiones para
+              desafiar la lógica del "capital fósil" y construir alternativas
+              productivas que no dependan del despojo ecológico?
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const headers = document.querySelectorAll(".accordion-header");
+    <footer class="text-center mt-12 pt-6 border-t border-gray-700 text-gray-500 text-xs">
+      <p>&copy; Copyrigth 2025. Diseñado por William Alejandro Rincon Prieto para Informatica y Scoiedad &#124 Bogotá -
+        Colombia</p>
+      <p><a href="https://www.instagram.com/alejandrorinp/" target="_blank">Instagram</a></p>
+      <p><a href="https://github.com/wilalejo10" target="_blank">Github</a></p>
+    </footer>
+  </div>
 
-        headers.forEach((header) => {
-          header.addEventListener("click", () => {
-            const targetId = header.getAttribute("data-target");
-            const content = document.getElementById(targetId);
-            const icon = header.querySelector("svg");
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const headers = document.querySelectorAll(".accordion-header");
 
-            document
-              .querySelectorAll(".accordion-content.open")
-              .forEach((openContent) => {
-                if (openContent.id !== targetId) {
-                  openContent.classList.remove("open");
-                  const otherIcon =
-                    openContent.previousElementSibling.querySelector("svg");
-                  if (otherIcon) otherIcon.classList.remove("rotate-180");
-                }
-              });
+      headers.forEach((header) => {
+        header.addEventListener("click", () => {
+          const targetId = header.getAttribute("data-target");
+          const content = document.getElementById(targetId);
+          const icon = header.querySelector("svg");
 
-            content.classList.toggle("open");
-            if (icon) icon.classList.toggle("rotate-180");
-          });
+          document
+            .querySelectorAll(".accordion-content.open")
+            .forEach((openContent) => {
+              if (openContent.id !== targetId) {
+                openContent.classList.remove("open");
+                const otherIcon =
+                  openContent.previousElementSibling.querySelector("svg");
+                if (otherIcon) otherIcon.classList.remove("rotate-180");
+              }
+            });
+
+          content.classList.toggle("open");
+          if (icon) icon.classList.toggle("rotate-180");
         });
-
-        const firstContent = document.getElementById("content-1");
-        const firstIcon = document.querySelector(".accordion-header svg");
-        if (firstContent && firstIcon) {
-          firstContent.classList.add("open");
-          firstIcon.classList.add("rotate-180");
-        }
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
 </html>
